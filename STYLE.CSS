@@ -1,11 +1,11 @@
-/* Reset básico para remover margens e paddings padrão */
+/* Reset básico */
 body, h1, h2, div, section, header {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral do corpo */
+/* Estilo do corpo */
 body {
     font-family: 'Sour Gummy', sans-serif;
     background-color: #f4f4f4;
