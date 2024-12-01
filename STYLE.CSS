@@ -1,45 +1,77 @@
-.chamada{
-    background: yellow;
-    display: flex;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    justify-content: center;
+/* Reset básico para remover margens e paddings padrão */
+body, h1, h2, div, section, header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background: purple;
-    margin: 0px;
-    font-family: "Sour Gummy", sans-serif;
-    color: black;
-    margin-bottom: 100px;
-}
-header{
-    font-size: 35px;
-    color: black;
-    border-bottom: 3px solid black;
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Sour Gummy', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
     padding: 20px;
 }
-h1{
-    font-size: 40px;
-}
-.chamada-texto{
-    margin-right: 5%;
-}
-.categoria{ 
- margin-top: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.categoria-videos{
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-}
-.categoria-videos img{
-    height: 200px;
-    opacity: 0.5;
-}
-.categoria-videos img:hover{
-    opacity: 1.0;
-    border:3px solid blue;
 
+/* Seção de chamada principal */
+.chamada {
+    background-color: #0077b6;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.chamada-texto h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Vídeo principal */
+iframe {
+    border: none;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+/* Estilo da seção de categorias */
+.categoria {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.categoria h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Container de vídeos */
+.categoria-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilo das imagens */
+.categoria-videos a img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoria-videos a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
